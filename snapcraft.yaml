@@ -1590,6 +1590,7 @@ parts:
       find "${CRAFT_PRIME}"/bin -type f \
         -not -path "${CRAFT_PRIME}/bin/ceph" \
         -not -path "${CRAFT_PRIME}/bin/editor" \
+        -not -path "${CRAFT_PRIME}/bin/journalctl" \
         -not -path "${CRAFT_PRIME}/bin/lxc-checkconfig" \
         -not -path "${CRAFT_PRIME}/bin/lxd" \
         -not -path "${CRAFT_PRIME}/bin/nvidia-container-cli" \
@@ -1653,3 +1654,4 @@ parts:
       wrappers/remote-viewer: bin/
       wrappers/sshfs: bin/
       wrappers/virt-v2v-in-place: bin/
+      wrappers/journalctl: bin/
